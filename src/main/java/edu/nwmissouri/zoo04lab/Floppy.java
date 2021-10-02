@@ -1,71 +1,46 @@
+package edu.nwmissouri.zoo04lab;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.nwmissouri.ManojKota04lab;
-
 /**
  *
- * @author Manoj Kota
+ * @author S545243 Satheesh Eppalapelli
  */
-public class Frog extends Animal {
+public class Floppy extends Animal {
 
     /**
-     *
-     * @param name
-     * name parameter
+     * Every animal has a name. Class variable name is not private, but
+     * protected - only subclass can use it.
      */
-    public Frog(String name) {
+    protected String name = "Floppy";
+
+    /**
+     * Floppy super constructor
+     *
+     * @param name - the name of this instance of an animal
+     */
+    public Floppy(String name) {
         super(name);
     }
 
     /**
+     * speak() - general method for Floppy utterance.
      *
-     * overrides speak method
      */
     @Override
-    public void speak()
-    {
-       System.out.println("Iam Frog,Iam Frog,Iam Frog");
+    public void speak() {
+        System.out.println("I'm a Floppy.");
     }
 
     /**
-     * overrides move method
+     * move() - general method for Floppy utterance.
+     *
      */
     @Override
-    public void move()
-    {
-       System.out.println("When i move,I jump,I jump");
-    }
-    
-    /**
-     * living method
-     */
-    public void habitate() {
-        System.out.println("It lives both on land and water");
-    }
-
-    /**
-     * type of animal
-     */
-    public void type() {
-        System.out.println("Its a amphibian");
-    }
-   
-    /**
-     * feeding method
-     */
-    public void feeding()
-    {
-       System.out.println("Feeds on algae and insects");
-    }
-
-    /**
-     * live span method
-     */
-    public void livespan()
-    {
-        System.out.println("lives upto 10-12 years");
+    public void move() {
+        System.out.println("When I move, I swim, swim.");
     }
 }
