@@ -39,5 +39,10 @@ public class Elephant extends Animal {
     public void move() {
         System.out.println(" I could not able to swim in water but would like to walk! ");
     }
-
+    public static void main(String[] args)
+    {
+        Elephant Tommy = new Elephant("Tommy");
+        Tommy.move();
+        Tommy.speak();;
+    }
 }
