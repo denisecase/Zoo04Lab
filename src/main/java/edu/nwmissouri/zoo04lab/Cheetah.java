@@ -5,6 +5,8 @@
  */
 package edu.nwmissouri.zoo04lab;
 
+import java.util.Scanner;
+
 
 
 /**
@@ -29,6 +31,21 @@ public class Cheetah extends Animal {
     @Override
     public void move() {
         System.out.println("When I move, I walk, walk, walk.");;//To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public void diet() {
+        System.out.println("When I move, I walk, walk, walk.");;//To change body of generated methods, choose Tools | Templates.
+    }
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        String message=scan.nextLine();
+        
+      Cheetah obj=new Cheetah(message);
+      obj.speak();
+      obj.move();
+      obj.diet();
+      
+        
     }
     
     
