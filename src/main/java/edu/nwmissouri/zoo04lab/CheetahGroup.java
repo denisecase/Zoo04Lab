@@ -35,6 +35,9 @@ public class CheetahGroup {
         myGroup.forEach(cheetah -> {
             cheetah.speak();
             cheetah.move();
+            cheetah.diet();
+            cheetah.profess();
+            
         });
         System.out.println("Nice Cheetahs - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

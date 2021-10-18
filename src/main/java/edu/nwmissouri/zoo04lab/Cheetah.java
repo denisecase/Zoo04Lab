@@ -25,6 +25,11 @@ public class Cheetah extends Animal {
     public void move() {
         System.out.println("When I move, I walk, walk, walk.");
     }
+    
+    public void diet(){
+        System.out.println("I am a carnivore");
+        
+    }
 
     public void profess() {
         double a = 2.5;
@@ -51,6 +56,7 @@ public class Cheetah extends Animal {
         a.speak();
         a.move();
         a.profess();
+        a.diet();
     }
 
 }

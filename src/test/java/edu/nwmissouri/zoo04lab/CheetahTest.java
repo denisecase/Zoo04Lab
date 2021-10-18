@@ -68,7 +68,7 @@ public class CheetahTest {
     }
 
     /**
-     * Test custom function ardvarkAddition()
+     * Test custom function cheetahAddition()
      *
      * @throws Exception
      */
