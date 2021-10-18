@@ -1,7 +1,6 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
-<<<<<<< HEAD
  * 
  *  This documents "ColorsOfLife"
  * @author S545407
@@ -17,10 +16,6 @@ enum ColorsOfLife{
 /**
  * This class defines the nature of the Emu animal
  * @author Venkata Prabhakar Takkellapati (S545407)
-=======
- *
- * @author S545407
->>>>>>> 33bdb1ecafe0fedbcf3ad46436d4670308076e7b
  */
 public class Emu extends Animal {
 
@@ -42,7 +37,7 @@ public class Emu extends Animal {
     @Override
     public void move() {
         System.out.println("they've become rare in the wild.");
-<<<<<<< HEAD
+
     } 
     /**
      * This method will initialize the values and calls the sum method
@@ -74,11 +69,6 @@ public double emuSum(double first, int second) {
         emu.sumOfTwo();
          System.out.println("My Favourite Color is : "+ColorsOfLife.YELLOW);
 
-=======
-    }
 
-    public static void main(String[] args) {
-        System.out.println("hello");
->>>>>>> 33bdb1ecafe0fedbcf3ad46436d4670308076e7b
     }
 }
