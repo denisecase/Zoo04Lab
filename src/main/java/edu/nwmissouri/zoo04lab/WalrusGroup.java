@@ -44,6 +44,7 @@ public class WalrusGroup {
             Walrus.move();
             Walrus.intro();
             Walrus.about();
+            Walrus.calculation();
         });
         System.out.println("Nice Walrus ");
         
