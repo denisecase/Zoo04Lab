@@ -1,22 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.nwmissouri.zoo04lab;
 
-import java.util.Scanner;
-
-
-
 /**
+ * Cheetah class (derived subclass of the superclass Animal)
  *
  * @author Srilekha Janagam
  */
 public class Cheetah extends Animal {
 
     /**
-     * Cheetah constructor 
+     * Aardvark constructor
+     *
      * @param name - the name of this aardvark
      */
     public Cheetah(String name) {
@@ -25,29 +18,39 @@ public class Cheetah extends Animal {
 
     @Override
     public void speak() {
-        System.out.printf("I'm %s. I'm an Aardvark!", this.name);
+        System.out.printf("I'm %s. I'm an Cheetah!", this.name);
     }
 
     @Override
     public void move() {
-        System.out.println("When I move, I walk, walk, walk.");;//To change body of generated methods, choose Tools | Templates.
+        System.out.println("When I move, I walk, walk, walk.");
     }
-    
-    public void diet() {
-        System.out.println("When I move, I walk, walk, walk.");;//To change body of generated methods, choose Tools | Templates.
-    }
-    public static void main(String[]args){
-        Scanner scan=new Scanner(System.in);
-        String message=scan.nextLine();
-        
-      Cheetah obj=new Cheetah(message);
-      obj.speak();
-      obj.move();
-      obj.diet();
-      
-        
-    }
-    
-    
-}
 
+    public void profess() {
+        double a = 2.5;
+        int b = 2;
+        double c = getCheetahAddition(a, b);
+        System.out.printf("I know CheetahAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    }
+
+    /**
+     * Custom Cheetah function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getCheetahAddition(double valueOne, int valueTwo) {
+        return valueOne + valueTwo;
+    }
+
+    public static void main(String[] args) {
+        var a = new Cheetah("Tester");
+        a.speak();
+        a.move();
+        a.profess();
+    }
+
+}
