@@ -22,10 +22,10 @@ public class Gerenuk extends Animal {
      *     
      * @param name - the name of this generuk
      */
-   public Gerenuk(String name)
-   {
-      super(name);
-   }
+//   public Gerenuk(String name)
+//   {
+//      super(name);
+//   }
     @Override
    public void speak()
     {
@@ -48,7 +48,7 @@ public class Gerenuk extends Animal {
    public void profess() {
         double a = 2.5;
         int b = 2;
-        double c = getGerenuklAddition(a, b);
+        double c = getGerenukAddition(a, b);
         System.out.printf("I know GerenukAddition! %4.2f plus %d is %4.2f \n", a, b, c);
     }
 
