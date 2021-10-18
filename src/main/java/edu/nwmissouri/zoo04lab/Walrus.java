@@ -13,7 +13,7 @@ public class Walrus extends Animal {
     
      public void calculation() {
         double a = 4.2;
-        int b = 9;
+        int b = 5;
         double c = getWalrusAddition(a, b);
         System.out.printf("I know WalrusAddition! %4.2f plus %d is %4.2f \n", a, b, c);
     }

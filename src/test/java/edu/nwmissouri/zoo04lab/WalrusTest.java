@@ -41,7 +41,6 @@ public class WalrusTest {
 
     /**
      * Test speak method, of class Walrus.
-     *
      * @throws java.lang.Exception
      */
     @Test

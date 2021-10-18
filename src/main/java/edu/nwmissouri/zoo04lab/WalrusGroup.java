@@ -48,7 +48,7 @@ public class WalrusGroup {
         });
         System.out.println("Nice Walrus ");
         
-        System.out.println("*******************************");
+        System.out.println("*****************************");
         
         Donate d = Donate.AdoptAnimal;
         switch(d) {
