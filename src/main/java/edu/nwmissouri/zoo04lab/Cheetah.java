@@ -13,12 +13,7 @@ public class Cheetah extends Animal {
      * @param name - the name of this Cheetah
      */
     
-    enum RANK{
-        FIRST,
-        SECOND,
-        THIRD
-        
-    }
+
     public Cheetah(String name) {
         super(name);
     }
@@ -57,7 +52,12 @@ public class Cheetah extends Animal {
     public double getCheetahAddition(double valueOne, int valueTwo) {
         return valueOne + valueTwo;
     }
-
+    enum RANK{
+        FIRST,
+        SECOND,
+        THIRD
+        
+    }
     public static void main(String[] args) {
         var a = new Cheetah("Tester");
         a.speak();
