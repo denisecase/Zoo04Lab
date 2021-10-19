@@ -23,11 +23,11 @@ public class MightyLionGroupTest {
     }
 
     @BeforeAll
-    public static void hunt() {
+    public static void huntClass() {
     }
 
     @AfterAll
-    public static void chase() {
+    public static void chaseClass() {
     }
 
     @BeforeEach
