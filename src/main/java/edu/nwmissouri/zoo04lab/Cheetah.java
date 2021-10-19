@@ -10,8 +10,15 @@ public class Cheetah extends Animal {
     /**
      * Aardvark constructor
      *
-     * @param name - the name of this aardvark
+     * @param name - the name of this Cheetah
      */
+    
+    enum RANK{
+        FIRST,
+        SECOND,
+        THIRD
+        
+    }
     public Cheetah(String name) {
         super(name);
     }
@@ -57,6 +64,11 @@ public class Cheetah extends Animal {
         a.move();
         a.profess();
         a.diet();
+        RANK R1=RANK.FIRST;
+        RANK R2=RANK.SECOND;
+        RANK R3=RANK.THIRD;
+        System.out.println("enums:" +R1 +"\n"+R2 +"\n"+R3);
+        
     }
 
 }
