@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package edu.nwmissouri.zoo04lab;
+        
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -15,11 +16,11 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * Test Glyptodon using JUnit5
  * @author Manish Goud Bandharapu
  */
 public class GlyptodonTest {
-      private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+    
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
     public GlyptodonTest() {
     }
@@ -42,7 +43,7 @@ public class GlyptodonTest {
     }
 
     /**
-     * Test speak method, of class Glyptodon.
+     * Test speak method, of class Glyptodon
      *
      * @throws java.lang.Exception
      */
@@ -50,13 +51,13 @@ public class GlyptodonTest {
     public void testSpeak() throws Exception {
         String expected = "I'm Manish. I'm an Glyptodon!";
         var glyptodon = new Glyptodon("Manish");
-        Glyptodon.speak();
+        glyptodon.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     /**
-     * Test move method, of class Glyptodon.
+     * Test move method, of class 
      *
      * @throws java.lang.Exception
      */
@@ -76,14 +77,14 @@ public class GlyptodonTest {
      */
     @Test
     public void testGlyptodonAddition() throws Exception {
-        
+
         // set up test, figure out expected by hand
         double first = 5.0;
         int second = 10;
         double expected = 15.0;
 
         // call function to get the actual
-        var glyptodon = new Glyptoodn("Manish");
+        var glyptodon = new Glyptodon("Manish");
         double result = glyptodon.getGlyptodonAddition(first, second);
 
         // assertEquals(expected, actual);
