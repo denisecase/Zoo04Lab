@@ -6,6 +6,7 @@ package edu.nwmissouri.zoo04lab;
 
 /**
  * Walrus class,derived subclass from the superclass Animal)
+ * 
  * @author Rehaman Naguru Abdur
  */
 public class Walrus extends Animal {

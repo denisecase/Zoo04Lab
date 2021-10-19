@@ -12,8 +12,9 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Test Walrus using JUnit5
+ * 
  *
- * @Rehaman_Naguru_Abdur
+ * @Rehaman Naguru Abdur
  */
 public class WalrusTest {
 
@@ -88,6 +89,7 @@ public class WalrusTest {
     /**
      * Test custom function walrusAddition()
      *
+     * 
      * @throws Exception
      */
     @Test

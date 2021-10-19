@@ -37,7 +37,7 @@ public class WalrusGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("********************************");
+        System.out.println("******************************");
         System.out.println("Hey - look at the Walrus!");
         myGroup.forEach(Walrus -> {
             Walrus.speak();
@@ -53,13 +53,13 @@ public class WalrusGroup {
         Donate d = Donate.AdoptAnimal;
         switch(d) {
             case Food:
-                System.out.println("######Thank you for Donating food#######");
+                System.out.println("#######Thank you for Donating food#######");
                 break;
             case Money: 
                 System.out.println("$$$$$$$Thank you for Donating Money$$$$$$$$");
                 break;
             case ZooNeeds: 
-                System.out.println("@@@@@@@@Thank you for Donating Zoo Needs and Accesories@@@@@");
+                System.out.println("@@@@@@@@Thank you for Donating Zoo Needs and Accesories@@@@@@@");
                 break;
             case AdoptAnimal: 
                 System.out.println("*******Thank you for your intrest in Adopting an animal*******");
