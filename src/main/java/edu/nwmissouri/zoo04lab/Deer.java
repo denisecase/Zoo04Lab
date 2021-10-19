@@ -20,6 +20,11 @@ public class Deer extends Animal {
     
 
     }
+    enum raj{
+        jan,
+        feb,
+        dec
+    }
 
     /**
      *
@@ -59,5 +64,29 @@ public class Deer extends Animal {
     public void food()
     {
        System.out.println("Feeds on plants");
+    }
+    public String name(String s,String m){
+        return (s+m);
+        
+    }
+    public void display(){
+        System.out.println("name is:"+name("Rajashekhar","kota"));
+    }
+   public static void main(String[] args){
+        Deer d = new Deer("Hurry");
+        d.speak();
+        d.display();
+        d.food();
+        d.ismamal();
+        d.move();
+        d.place();
+        raj r=raj.dec;
+        raj r1=raj.feb;
+        raj r2=raj.jan;
+        System.out.println("months"+r+"\n"+r1+"\n"+r2);
+
+
+        
+        
     }
 }
