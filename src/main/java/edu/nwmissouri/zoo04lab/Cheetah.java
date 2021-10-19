@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo04lab;
 public class Cheetah extends Animal {
 
     /**
-     * Aardvark constructor
+     * Cheetah constructor
      *
      * @param name - the name of this Cheetah
      */
