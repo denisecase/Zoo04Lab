@@ -20,6 +20,9 @@ public class Deer extends Animal {
     
 
     }
+    /*
+    *Introduced enum
+    */
     enum raj{
         jan,
         feb,
@@ -27,7 +30,7 @@ public class Deer extends Animal {
     }
 
     /**
-     *
+     *overriding speak method
      */
     @Override
     public void speak()
@@ -36,7 +39,7 @@ public class Deer extends Animal {
     }
 
     /**
-     *
+     *Overriding move method
      */
     @Override
     public void move()
@@ -45,34 +48,50 @@ public class Deer extends Animal {
     }
 
     /**
-     *
+     *Stated the place of custom animal
      */
     public void place() {
         System.out.println("It live only on land");
     }
 
     /**
-     *
+     *Added a method with ismamal name
      */
     public void ismamal() {
         System.out.println("Iam a mamal");
     }
 
     /**
-     *
+     * using food method
      */
     public void food()
     {
        System.out.println("Feeds on plants");
     }
+
+    /**
+     *returning string
+     * @param s
+     * @param m
+     * @return
+     */
     public String name(String s,String m){
         return (s+m);
         
     }
+
+    /**
+     * it displays the name
+     */ 
     public void display(){
         System.out.println("name is:"+name("Rajashekhar","kota"));
     }
-   public static void main(String[] args){
+
+    /**
+     *program execution started
+     * @param args
+     */
+    public static void main(String[] args){
         Deer d = new Deer("Hurry");
         d.speak();
         d.display();

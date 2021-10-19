@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author S545008
+ * @author Rajashekhar Kota
  */
 public class DeerGroupTest {
     

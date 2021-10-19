@@ -3,8 +3,8 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
- * @author S545008
+ *class DeerGroup is added
+ * @author Rajashekhar Kota
  */
 public class DeerGroup {
     
@@ -12,7 +12,7 @@ public class DeerGroup {
      private static ArrayList<Deer> myGroup;
 
     /**
-     * Create a static group of Deer
+     * Created a static group of Deer
      *
      * @return the number of animals in the group
      */
@@ -36,6 +36,8 @@ public class DeerGroup {
         myGroup.forEach(Deer -> {
             Deer.speak();
             Deer.move();
+            Deer.display();
+
         });
         System.out.println("Nice Deer - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
