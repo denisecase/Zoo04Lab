@@ -3,7 +3,8 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides method to create an run group a group of Glyptodon
+ * 
  * @author Manish Goud Bandharapu
  */
 public class GlyptodonGroup {
@@ -40,4 +41,6 @@ public class GlyptodonGroup {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     }
 
+    
+    
 }

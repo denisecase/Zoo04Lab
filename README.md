@@ -17,6 +17,16 @@
 
 -----
 
+## Web App
+
+A user interface (besides the console) would be nice. 
+We voted on a web front end.
+
+```Bash
+$ mvn clean package spring-boot:repackage
+$ java -jar target/Zoo04Lab-1.0-SNAPSHOT
+```
+
 ## Keep Current - Upgrade to Java 17
 
 5 steps to update (details below):

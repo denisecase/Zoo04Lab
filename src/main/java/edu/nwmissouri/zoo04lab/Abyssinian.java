@@ -7,16 +7,21 @@ package edu.nwmissouri.zoo04lab;
 
 /**
  *
- * @author Vamsi krishna Areti (S5449902)
+ * @author Vamsi krishna Areti (S544902)
  */
 //class Abyssinian is extending the animal class
 public class Abyssinian extends Animal {
     //creating constructor for Abyssinian class
+    enum RANK{
+        FIRST,
+        SECOND,
+        THIRD
+    }
    public Abyssinian(String name) 
    {
        super(name);
    }
-   //overriding the talk method
+   //overriding the speak method
     @Override
    public void speak()
     {
@@ -28,16 +33,29 @@ public class Abyssinian extends Animal {
     {
         System.out.println("I eat Purina Pro Plan True Nature Adult Grain Free Natural Salmon & Egg Recipe.");
     }
-    //overriding the walk method
+    //overriding the move method
    @Override
     public void move()
     {
         System.out.println("I walk on four legs.");
     }
+    public void visible(){
+        System.out.println("Vamsi Krishna Areti");
+    }
+    public void breed(){
+        System.out.println("I am one of the breed from cat family");
+    }
      public static void main(String[] args) {
-        var aby = new Abyssinian("Areti");
+        Abyssinian aby = new Abyssinian("Areti");
         aby.speak();
         aby.move();
         aby.eat();
+        aby.visible();
+        aby.breed();
+        
+        RANK RA1=RANK.FIRST;
+        RANK RA2=RANK.SECOND;
+        RANK RA3=RANK.THIRD;
+        System.out.println("enums:"+RA1+"\n"+RA2+"\n"+RA3);
     }
 }

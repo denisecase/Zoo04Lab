@@ -24,6 +24,9 @@ public class ProngHornGroup {
 
         return myGroup.size();
     }
+    /** 
+     * function run prints the statements
+     */
 
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
@@ -31,6 +34,8 @@ public class ProngHornGroup {
         for (ProngHorn pronghorn : myGroup) {
             pronghorn.speak();
             pronghorn.move();
+             pronghorn.profess1();
+
         }
 
         System.out.println("Nice pronghorn - that was fun!");

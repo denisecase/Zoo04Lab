@@ -3,7 +3,8 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ *Provides methods to create and run a group of ElephantBirds
+ * 
  * @author Hemanth Kumar Reddy Pidaparathy
  */
 public class ElephantBirdGroup {

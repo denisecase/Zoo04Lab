@@ -11,6 +11,8 @@
         <version>2.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    
+    <!-- This application -->
  
     <groupId>edu.nwmissouri</groupId>
     <artifactId>Zoo04Lab</artifactId>
@@ -18,8 +20,7 @@
     <packaging>jar</packaging>
     <name>Zoo04Lab</name>
     <description>Make our Zoo a Web app with Spring Boot (started with Spring Initialzr)</description>
-
-    <url>http://www.example.com</url>
+    <url>https://zooweb.herokuapp.com/</url>
  
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,28 +28,19 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
-
-        <junit>5.6.2</junit>
-        
-        <!-- Plugin versions -->
-        <maven.shade>3.2.2</maven.shade>
-        <maven.clean>3.1.0</maven.clean>
-        <maven.resources>3.1.0</maven.resources>
-        <maven.compiler>3.8.1</maven.compiler>
-        <maven.surefire>3.0.0-M5</maven.surefire>
-        <maven.jar>3.2.0</maven.jar>
-        <maven.install>3.0.0-M1</maven.install>
-        
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
     </properties>
 
     <dependencies>
         <!-- Web App Dependencies -->
-        
+         
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -56,14 +48,13 @@
         
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     
         <!-- Testing dependencies-->
@@ -71,27 +62,27 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
-            <version>2.5.5</version>
             <type>jar</type>
         </dependency>
+        
     </dependencies>
     
     <build>
@@ -113,7 +104,6 @@
             </plugin>
             
             <!-- Previous plugins (extra functionality) -->
-           
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

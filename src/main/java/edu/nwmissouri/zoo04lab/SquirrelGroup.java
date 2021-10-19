@@ -2,7 +2,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * SquirrelGroup class demonstrating run and create methods
  * @author Nithin Reddy Kumbham
  */
 public class SquirrelGroup {

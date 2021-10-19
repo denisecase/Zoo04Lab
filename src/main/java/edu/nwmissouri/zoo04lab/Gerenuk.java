@@ -67,10 +67,26 @@ public class Gerenuk extends Animal {
     public double getGerenukAddition(double valueOne, int valueTwo) {
         return valueOne + valueTwo;
     }
+    /**
+     * Enum function with plant values
+     * 
+     */
+    public enum Gender {
+        Male,
+        Female,
+        Other,
+    }
+    /**
+     * Main method
+     * @param args 
+     */
+    
      public static void main(String[] args) {
         var a = new Gerenuk("Tester");
         a.speak();
         a.move();
+         a.size();
+         a.place();
         a.profess();
         System.out.println("My favourite place is "+Places.HYDERABAD);
      }

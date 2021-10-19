@@ -6,12 +6,19 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
- * @author Manish Gouud Bandharapu
+ * Glyptodon Class derived from animal class
+ * 
+ * @author Manish Goud Bandharapu 
  */
 public class Glyptodon extends Animal{
+    enum animal {
+        lion,
+        tiger,
+        deer
+        }
     
     /**
+     * 
      * Animal addition
      * @param name
      */
@@ -24,7 +31,7 @@ public class Glyptodon extends Animal{
      */
     @Override
     public void speak() {
-        System.out.printf("I'm %s. I'm a Lion!",this.name);
+        System.out.printf("I'm Manish. I'm an Glyptodon!",this.name);
     }
     
     /**
@@ -32,8 +39,27 @@ public class Glyptodon extends Animal{
      */
     @Override()
     public void move() {
-        System.out.println("when I move, I run, I roar.\n");
+        System.out.println("move move move \n");
         
     }
+    public void profes(){
+        double a = 2.5;
+        int b = 2;
+        double c = getGlyptodonAddition(a,b);
+        System.out.printf("I know Glyptodon addition! %4.2f plus %d is %4.2f \n",a,b,c);
+    }
     
+    double getGlyptodonAddition(double first, int second) {
+        return first+second; //To change body of generated methods, choose Tools | Templates.
+    }
+    public static void main(String[] args) {
+        var a = new Glyptodon("Tester");
+        a.speak();
+        a.move();
+        a.profes();
+        animal R1=animal.lion;
+        animal R2=animal.tiger;
+        animal R3=animal.deer;
+        System.out.println("enums:"+R1+"\n"+R2+"\n"+R3);
+    }
 }

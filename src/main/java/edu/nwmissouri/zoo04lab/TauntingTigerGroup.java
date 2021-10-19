@@ -23,7 +23,9 @@ public class TauntingTigerGroup {
 
         return myGroup.size();
     }
-
+    /**
+     * This is the run method for TauntingTigerGroup
+     */
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println("Hey - look at the Taunting Tiger!");

@@ -12,6 +12,12 @@ package edu.nwmissouri.zoo04lab;
  */
 public class Lioness extends Animal {
 
+    public enum EatableType {
+        Vegeterian,
+        NonVegeterian,
+        Water
+    }
+
     /**
      * Constructor
      *
@@ -19,6 +25,21 @@ public class Lioness extends Animal {
      */
     Lioness(String name) {
         super(name);
+    }
+
+    /**
+     * This is a main method
+     *
+     * @author Sreebharath Mallampati
+     * @param args
+     */
+    public static void main(String[] args) {
+        Lioness lionessObj = new Lioness("Bharath");
+        lionessObj.repeatStrings(3, "Hello");
+        lionessObj.checkRepetition();
+        lionessObj.move();
+        lionessObj.speak();
+        System.out.println("I eat " + EatableType.NonVegeterian);
     }
 
     /**
@@ -41,4 +62,17 @@ public class Lioness extends Animal {
         System.out.println("When I move, I hunt, hunt, hunt.\n");
     }
 
+    public String repeatStrings(int times, String word) {
+        String result = "";
+        for (int i = 0; i < times; i++) {
+            result += word;
+        }
+        return result;
+    }
+
+    public String checkRepetition() {
+        String repeatedString = repeatStrings(6, "Check");
+        System.out.println(repeatedString);
+        return repeatedString;
+    }
 }

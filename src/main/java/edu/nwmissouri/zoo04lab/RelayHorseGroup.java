@@ -36,6 +36,7 @@ public class RelayHorseGroup {
         myGroup.forEach(RelayHorse -> {
             RelayHorse.speak();
             RelayHorse.move();
+            RelayHorse.profess();
         });
         System.out.println("Nice RelayHorse - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

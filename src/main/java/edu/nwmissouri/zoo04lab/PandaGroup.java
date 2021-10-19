@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- * Provides methods to create and run a group of Aardvarks
+ * Provides methods to create and run a group of Pandas
  *
  * @author Preethi Jadhav
  */
@@ -26,19 +26,30 @@ public class PandaGroup {
 
         return myPandaGroup.size();
     }
-
+    /**
+     * e num type of age 
+     */
+    public enum age{
+        kidAge,
+        middleAge,
+        oldAge,
+    }
     /**
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        System.out.println("PANDA PANDA PANDA PANDA");
         System.out.println("Hey - look at the Pandas!");
         myPandaGroup.forEach(panda -> {
             panda.speak();
             panda.move();
         });
         System.out.println("Nice Pandas - that was fun!");
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        System.out.println("This Panda1 is : "+age.kidAge);
+        System.out.println("This Panda2 is : "+age.middleAge);
+        System.out.println("This Panda3 is : "+age.oldAge);
+
+        System.out.println("PANDA PANDA PANDA PANDA");
     }
 
 }

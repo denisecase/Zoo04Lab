@@ -34,6 +34,9 @@ public class BuffaloGroup {
         myGroup.forEach(Buffalo -> {
             Buffalo.speak();
             Buffalo.move();
+            Buffalo.diet();
+            Buffalo.family();
+            Buffalo.lifespan();
         });
         System.out.println("Nice Buffaloes - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

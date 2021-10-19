@@ -3,14 +3,14 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * This class is about MuleDeerGroup
  * @author Hari Hara Mummadi
  */
 public class MuleDeerGroup {
      private static ArrayList<MuleDeer> myGroup;
 
     /**
-     * Create a static group of Aardvarks
+     * Create a static group of MuleDeers
      *
      * @return the number of animals in the group
      */
@@ -34,6 +34,8 @@ public class MuleDeerGroup {
         myGroup.forEach(muledeer -> {
             muledeer.speak();
             muledeer.move();
+            muledeer.habitate();
+            muledeer.feed();
         });
         System.out.println("Nice Mule deers - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

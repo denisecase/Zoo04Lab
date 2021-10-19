@@ -12,6 +12,11 @@ public class Lion extends Animal {
      *
      * @param name - the name of this Lion
      */
+    enum RECORD{
+        FIRST,
+        SECOND,
+        THIRD
+    }
     public Lion(String name) {
         super(name);
     }
@@ -56,6 +61,10 @@ public class Lion extends Animal {
         a.move();
         a.profess();
         a.speed();
+        RECORD R1= RECORD.FIRST;
+        RECORD R2= RECORD.SECOND;
+        RECORD R3= RECORD.THIRD;
+        System.out.println("enums"+R1+"\n"+R2+"\n"+R3);
     }
 
 }

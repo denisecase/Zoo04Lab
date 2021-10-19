@@ -26,9 +26,34 @@ public class Liger extends Animal {
 
     @Override
     public void speak() {
-         System.out.printf("I'm %s. I'm an Liger! \n", this.name);
+         System.out.printf("I roar very loudly! \n", this.name);
     }
     
     
+    public void eat() {
+         System.out.printf("I hunt very badly \n", this.name);
+    }
+     
+    /**
+     * Custom Liger function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getLigerAddition(double valueOne, int valueTwo) {
+        return valueOne + valueTwo;
+    }
+
+    public static void main(String[] args) {
+        var a = new Liger("Tester");
+        a.speak();
+        a.move();
+        a.eat();
+    }
+
 }
+
 

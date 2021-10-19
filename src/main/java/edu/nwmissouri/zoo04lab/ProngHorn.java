@@ -20,6 +20,18 @@ public class ProngHorn extends Animal {
     public ProngHorn(String name) {
         super(name);
     }
+    
+    /* Enum genertaion 
+     * 
+    
+    */
+    
+    
+    public enum Gender {
+        Male,
+        Female,
+        Unknown
+    }
 
     /**
      * This is speak method which is used to to print the message print the
@@ -28,7 +40,8 @@ public class ProngHorn extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("I am Pronghorn");
+    
+        System.out.printf("I'm %s. I'm a ProngHorn!", this.name);
     }
 
     /**
@@ -37,23 +50,52 @@ public class ProngHorn extends Animal {
      */
     @Override
     public void move() {
-        System.out.println("I can walk");
+     
+          System.out.println("When I move, I walk, walk, walk.");
     }
-
-    public void add(int a, int b) {
-        System.out.println(a + b);
-    }
-    public void sub(int a ,int b) {
     
-         System.out.println(a - b);
-    }
+    
+   
+    
 
-    public static void main(String args[]) {
+     /**
+     * Custom ProngHorn function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getProngHornAddition(double valueOne, int  valueTwo) {
+        return valueOne + valueTwo;
+    }
+    /**
+     * function profess1 calls the getProngHornAddition method
+     
+     */
+    
+    
+     public void profess1() {
+        double a = 2.5;
+        int b = 2;
+        double c = getProngHornAddition(a, b);
+        System.out.printf("I know ProngHornAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    } 
+    
+   /**
+    * main method 
+    
+    */
+    public static void main (String args[]) {
         ProngHorn p = new ProngHorn("Alekhya");
         p.speak();
         p.move();
-        p.add(2,3);
-        p.sub(3,2);
+        p.profess1();
+        
+        Gender c = Gender.Male;
+        System.out.println("The gender of pronghorn is : " + c);
+       
 
     }
 }

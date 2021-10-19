@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Provides methods to create and run a group of Cats
  *
- * @author Denise Case
+ * @author Maneesh Sake
  */
 public class CatGroup {
 
@@ -26,7 +26,7 @@ public class CatGroup {
 
         return myGroup.size();
     }
-
+    
     /**
      * Run (simulate) the group doing things
      */
@@ -36,9 +36,13 @@ public class CatGroup {
         myGroup.forEach(cat -> {
             cat.speak();
             cat.move();
+            cat.profess();
         });
         System.out.println("Nice cats - that was fun!");
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        String message= "Thank You for Choosing Me !.";
+        System.out.println(message);
+        
     }
 
 }

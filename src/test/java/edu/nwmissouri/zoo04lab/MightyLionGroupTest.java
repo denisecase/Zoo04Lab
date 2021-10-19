@@ -19,23 +19,26 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class MightyLionGroupTest {
 
-    //public MightyLionGroupTest() {
-    
+
+  
+    public MightyLionGroupTest() {
+    }
 
     @BeforeAll
-    public static void huntClass() {
+    public static void setUpClass() {
     }
 
     @AfterAll
-    public static void chaseClass() {
+    public static void tearDownClass() {
     }
 
     @BeforeEach
-    public void hunt() {
+    public void setUp() {
     }
 
     @AfterEach
-    public void chase() {
+    public void tearDown() {
+
     }
 
     /**
@@ -51,9 +54,10 @@ public class MightyLionGroupTest {
     /**
      * This is the Test of run method, of MightyLionGroup class.
      */
+    
     @Test
-    public void testGroupRun() {
-         MightyLionGroup.create();
+    public void testGrouprun() {
+   MightyLionGroup.create();
          MightyLionGroup.run();
         assertTrue(true);
     }

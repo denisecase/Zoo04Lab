@@ -15,6 +15,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
+ * This is used to explain test group of Elephant test group
+ * Test Elephant using JUnit5
  *
  * @author Homakesavadurgaprasad OMTRI (S544929)
  */

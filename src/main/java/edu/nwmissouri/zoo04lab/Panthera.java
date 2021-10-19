@@ -22,7 +22,8 @@ public class Panthera extends Animal {
         super(name);
     }
     /**
-     * Usage of enums
+     * enum generation
+     * enum
      */
     public enum Gender{
         Male,
@@ -48,7 +49,7 @@ public class Panthera extends Animal {
     }
     /**
     * This method prints the logarithm value of a number
-    *prints the logaithm value 
+    *prints the logarithm value 
     */
     public void logarithm(){
         double x=Math.log(5);
@@ -57,6 +58,8 @@ public class Panthera extends Animal {
     /**
     * This method prints the multiplication of two numbers 
     *prints the Multiplication value 
+    * @param a
+    * @param b
     */
     public void multiplication(int a, int b){
         int c=a*b;
@@ -69,7 +72,16 @@ public class Panthera extends Animal {
     public double getPantheraAddition(double valueOne, int valueTwo) {
         return valueOne + valueTwo;
     }
-
+    /**
+     * profess calls the two numbers
+     * calls the function getPantheraAddition
+     */
+        public void profess1() {
+        double a = 2.5;
+        int b = 2;
+        double c = getPantheraAddition(a, b);
+        System.out.printf("I know PantheraAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+            }
   public static void main(String args[]){
       var d=new Panthera("Harshika");
       d.speak();

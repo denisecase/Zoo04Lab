@@ -68,4 +68,52 @@ public class XraytetraTest {
         assertEquals(expected, actual);
     }
 
+    /**
+     * Test of location method, of class Xraytetra.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testLocation() throws Exception {
+        String expected = "I live in water!";
+        var xraytetra = new Xraytetra("Shashankaravi");
+        xraytetra.location();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test of character method, of class Xraytetra.
+     *
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testCharacter() throws Exception {
+        String expected = "The xraytetra has a base of different shades of yellow tail.";
+        var xraytetra = new Xraytetra("Shashankaravi");
+        xraytetra.character();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test custom function ardvarkAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testXraytetraAddition() throws Exception {
+
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var xraytetra = new Xraytetra("Shashankaravi");
+        double actual = xraytetra.getXraytetraAddition(first, second);
+
+        // assertEquals(expected, actual);
+        assertEquals(expected, actual);
+    }
 }

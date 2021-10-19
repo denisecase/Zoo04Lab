@@ -157,8 +157,8 @@ public class ZooApp {
                         BlackJaguarGroup.run();
                     }
                     case 8 -> {
-                        BlackPantherGroup.create();
-                        BlackPantherGroup.run();
+                        //BlackPantherGroup.create();
+                        //BlackPantherGroup.run();
                     }
                     case 9 -> {
                         BrachiosaurusGroup.create();

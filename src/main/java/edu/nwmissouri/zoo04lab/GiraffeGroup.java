@@ -3,7 +3,8 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Giraffe
+ * 
  * @author Himaja Reddy Maddi
  */
 public class GiraffeGroup {
@@ -25,6 +26,9 @@ public class GiraffeGroup {
         return myGroup.size();
     }
 
+    /**
+     * Run (simulate) the group doing things
+     */
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println("Hey - look at the giraffe!");

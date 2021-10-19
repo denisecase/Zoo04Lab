@@ -98,12 +98,12 @@ public class ZooIndexController {
                 BlackJaguarGroup.run();
             }
             case 8 -> {
-                BlackPantherGroup.create();
-                BlackPantherGroup.run();
+               // BlackPantherGroup.create();
+               // BlackPantherGroup.run();
             }
             case 9 -> {
-                BrachiosaurusGroup.create();
-                BrachiosaurusGroup.run();
+              //  BrachiosaurusGroup.create();
+              //  BrachiosaurusGroup.run();
             }
             case 10 -> {
                 BuffaloGroup.create();

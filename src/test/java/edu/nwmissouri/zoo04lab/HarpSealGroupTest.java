@@ -42,7 +42,7 @@ public class HarpSealGroupTest {
     @Test
     public void testCreate() {
         System.out.println("create");
-        int expResult = 0;
+        int expResult = 3;
         int result = HarpSealGroup.create();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

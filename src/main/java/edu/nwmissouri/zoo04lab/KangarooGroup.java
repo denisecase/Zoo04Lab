@@ -30,6 +30,9 @@ public class KangarooGroup {
         for (Kangaroo kangaroo : myGroup) {
             kangaroo.speak();
             kangaroo.move();
+            kangaroo.speed();
+            kangaroo.region();
+            kangaroo.calc();
         }
 
         System.out.println("Great to see you Kangaroo");

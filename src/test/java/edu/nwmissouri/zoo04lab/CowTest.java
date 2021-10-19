@@ -71,18 +71,12 @@ public class CowTest {
      * @throws Exception
      */
     @Test
-    public void testCowAddition() throws Exception {
-        
-        // set up test, figure out expected by hand
+    public void testCowAddition() throws Exception {        
         double morningMilkProdection = 2.0;
         double eveningMilkProduction = 1.0;
         double expected = 3.0;
-
-        // call function to get the actual
         var cow = new Cow("Cowwy");
         double actual = cow.getCowAddition(morningMilkProdection, eveningMilkProduction);
-
-        // assertEquals(expected, actual);
         assertEquals(expected, actual);
     }
 }

@@ -6,11 +6,18 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
+ * CREATING BEARCAT CLASS EXTENDING THE ANIMAL CLASS
+ * 
  * @author Pavan Kumar Atmakuri
  */
 public class Bearcat extends Animal {
     
+    
+    public enum occurFrom{
+    INDIA,
+    NEPAL,
+    BANGLADESH;
+    }
     public Bearcat(String name){
         super(name);
     }

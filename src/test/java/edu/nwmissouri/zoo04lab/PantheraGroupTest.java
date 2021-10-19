@@ -13,7 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test Panthera Group.
+ * Test Panther Group.
  * @author PinnintiHarshika
  */
 public class PantheraGroupTest {

@@ -3,10 +3,12 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *Provides methods to create and run a group of Cows
+ * Provides methods to create and run a group of Cows
+ *
  * @author Harika_Chintala
  */
 public class CowGroup {
+    
 
     private static ArrayList<Cow> myGroup;
 
@@ -17,7 +19,7 @@ public class CowGroup {
      */
     public static int create() {
         myGroup = new ArrayList<>();
-        
+
         Cow a = new Cow("dimpie");
         myGroup.add(a);
         myGroup.add(new Cow("mumpie"));
@@ -37,12 +39,15 @@ public class CowGroup {
             cow.move();
             cow.eat();
             cow.color();
-        cow.studentCow();
-        System.out.println("******************");
+            cow.studentCow();
+            System.out.println();
+            cow.directionToGo(Cow.EnumDirections.WEST);
+            System.out.println();
+            System.out.println("******************");
+            System.out.println();
         });
         System.out.println("Nice Cow - that was fun!");
         System.out.println("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
     }
 
 }
-

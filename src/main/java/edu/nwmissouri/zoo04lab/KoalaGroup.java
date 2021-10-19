@@ -30,14 +30,14 @@ public class KoalaGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("*****************************************");
+         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println("Hey - look at the Koala!");
         myGroup.forEach(Koala -> {
             Koala.speak();
             Koala.move();
         });
         System.out.println("Nice Koala - that was fun!");
-        System.out.println("*****************************************");
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
     }
     

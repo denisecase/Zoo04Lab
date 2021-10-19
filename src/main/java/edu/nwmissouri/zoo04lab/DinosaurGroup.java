@@ -18,10 +18,10 @@ public class DinosaurGroup {
     public static int create() {
         myDinosaurGroup = new ArrayList<>();
         
-        Dinosaur p = new Dinosaur("Dinosaur1");
+        Dinosaur p = new Dinosaur("Dino SIR..!");
         myDinosaurGroup.add(p);
-        myDinosaurGroup.add(new Dinosaur("Dinosaur2"));
-        myDinosaurGroup.add(new Dinosaur("Dinosaur3"));
+        myDinosaurGroup.add(new Dinosaur("Witcher..!"));
+        myDinosaurGroup.add(new Dinosaur("Charlizard..!"));
 
         return myDinosaurGroup.size();
     }
@@ -30,14 +30,14 @@ public class DinosaurGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("Roarrrrrrr....!");
-        System.out.println("Hey there's a Dinosaur...!");
+        System.out.println("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
+        System.out.println("Hey....there's a Dinosaur..!");
         myDinosaurGroup.forEach(Dinosaur -> {
             Dinosaur.speak();
             Dinosaur.move();
         });
-        System.out.println("Great Dinosaur's..it was a fun ride!");
-        System.out.println("Dinosaurrrrrr.....!");
+        System.out.println("Huge Dinosaur's..it was a fun ride!");
+        System.out.println("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
     }
 
 }

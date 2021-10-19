@@ -35,6 +35,7 @@ public class LigerGroup {
         myLigerGroup.forEach(liger -> {
             liger.speak();
             liger.move();
+            liger.eat();
         });
         System.out.println("Liger - cross breed of lion and tiger");
         System.out.println("Crossbreed of lion and tiger");

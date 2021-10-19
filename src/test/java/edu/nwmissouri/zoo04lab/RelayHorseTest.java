@@ -61,10 +61,33 @@ public class RelayHorseTest {
      */
     @Test
     public void testMove() throws Exception {
-        String expected = "When I move, I walk, walk, walk.";
+        String expected = "When I move, I Run, Run, Run.";
         var RelayHorse = new RelayHorse("Allie");
          RelayHorse.move();
         String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
+    }
+
+    
+
+    /**
+     * Test custom function RelayHorseAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testRelayHorseAddition() throws Exception {
+        
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var RelayHorse = new RelayHorse("Allie");
+        double actual = RelayHorse.getRelayHorseAddition(first, second);
+
+        // assertEquals(expected, actual);
         assertEquals(expected, actual);
     }
 

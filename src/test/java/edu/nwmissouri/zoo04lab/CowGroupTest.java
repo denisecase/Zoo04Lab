@@ -49,11 +49,9 @@ public class CowGroupTest {
      */
     @Test
     public void testGroupRun() {
-        //System.out.println("run");
         CowGroup.create();
-        CowGroup.run();
-         
-        // TODO review the generated test code and remove the default call to fail.           
+        CowGroup.run();    
+                  
         assertTrue(true);
     }
     

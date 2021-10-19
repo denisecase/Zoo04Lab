@@ -5,6 +5,21 @@
  */
 package edu.nwmissouri.zoo04lab;
 
+enum MagicMonth {
+    JAN,
+    FEB,
+    MARCH,
+    APRIL,
+    MAY,
+    JUNE,
+    JULY,
+    AUG,
+    SEP,
+    OCT,
+    NOV,
+    DEC,
+}
+
 /**
  * Duck class (derived subclass of the superclass Animal)
  * @author Sandhya Nidigonda
@@ -57,6 +72,9 @@ public class Duck extends Animal {
          d.move();
          d.eat();
          d.studentDuck();
+         
+         System.out.println("my MagicMonth is " +MagicMonth.DEC);
+         
      }
 }
      

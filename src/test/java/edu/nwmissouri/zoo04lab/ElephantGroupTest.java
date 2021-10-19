@@ -15,6 +15,7 @@ import org.junit.jupiter.api.Test;
 /**
  *
  * @author Homakesavadurgaprasad OMTRI (S544929)
+ * defines the ElephantGroup Test
  */
 public class ElephantGroupTest {
 

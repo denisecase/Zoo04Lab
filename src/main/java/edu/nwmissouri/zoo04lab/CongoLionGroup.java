@@ -35,6 +35,8 @@ public class CongoLionGroup {
         myGroup.forEach(CongoLion -> {
             CongoLion.speak();
             CongoLion.move();
+            CongoLion.name("akshay","kintali");
+            CongoLion.display();
         });
         System.out.println("Nice CongoLion - that was fun!");
         System.out.println("*****************************************");

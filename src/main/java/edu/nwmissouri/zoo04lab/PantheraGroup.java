@@ -10,7 +10,7 @@ public class PantheraGroup {
      private static ArrayList<Panthera> myGroup;
 
     /**
-     * Create a static group of Panthera
+     * Create a static group of Panther
      *
      * @return the number of animals in the group
      */
@@ -31,6 +31,7 @@ public class PantheraGroup {
         for (Panthera panthera : myGroup) {
             panthera.speak();
             panthera.move();
+            panthera.profess1();
         }
 
         System.out.println("Nice Panthera - that was fun!");
