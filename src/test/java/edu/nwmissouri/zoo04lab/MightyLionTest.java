@@ -24,20 +24,20 @@ public class MightyLionTest {
     }
 
     @BeforeAll
-    public static void setUpClass() {
+    public static void huntClass() {
     }
 
     @AfterAll
-    public static void tearDownClass() {
+    public static void chaseClass() {
     }
 
     @BeforeEach
-    public void setUp() {
+    public void hunt() {
         System.setOut(new PrintStream(outputStreamCaptor));
     }
 
     @AfterEach
-    public void tearDown() {
+    public void chase() {
     }
 
     /**
