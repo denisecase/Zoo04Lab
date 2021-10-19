@@ -63,6 +63,28 @@ public class KangaroovTest {
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
+    /**
+     * Test custom function ardvarkAddition()
+     *
+     * @throws Exception
+     */
+    @Test
+public void testKangaroovAddition() throws Exception {
 
-} 
+        // set up test, figure out expected by hand
+        double first = 5.0;
+        int second = 10;
+        double expected = 15.0;
+
+        // call function to get the actual
+        var kangaroov = new Kangaroov("Satya");
+        double actual = kangaroov.getKangaroovAddition(first, second);
+
+        // assertEquals(expected, actual);
+        assertEquals(expected, actual);
+    }
+}
+
+
+
 
